@@ -1,0 +1,118 @@
+#cv-template{
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 0 100px;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(135, 167, 175);
+    font-size: 13px;
+    
+  }
+  
+  .p-color {
+    color: rgb(10, 107, 131);
+  }
+  .my-10 {
+    margin: 10px 0;
+  }
+  .w-35 {
+    min-width: 30%;
+  }
+  i {
+    color: rgb(10, 107, 131);
+    padding: 0 2px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  li {
+    list-style-type: circle;
+  }
+  
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  h4 {
+    margin: 10px 0;
+    font-size: 17px;
+  }
+  
+  ul {
+    padding: 0 20px;
+  }
+  
+  hr {
+    color: rgb(18, 140, 170);
+  }
+  
+  .container2 {
+    /* width: 75vw; */
+    padding: 0.5% 7%;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: lightgreen; */
+  }
+  
+  .personal {
+    padding-top: 10px;
+  }
+  
+  .contact {
+    padding-top: 29px;
+    line-height: 22px;
+  }
+  
+  .contact a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .qualf {
+    /* background-color: lightblue; */
+  }
+  
+  .qualf table {
+    text-align: center;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1.5px solid rgb(10, 107, 131);
+    border-collapse: collapse;
+    padding: 5px 15px;
+  }
+  
+  .achv {
+    /* background-color: lightseagreen; */
+  }
+  
+  .projects {
+  }
+  
+  .skills {
+  }
+  .por {
+  }
+  
+  .extra {
+  }
+  

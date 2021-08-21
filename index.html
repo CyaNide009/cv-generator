@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css">
+    
+    <title>Resume Generator</title>
+  </head>
+  <body>
+    <div class="container" id="cv-form">
+      <h1 class="text-center my-2">Resume Generator</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="website">GitHub</label>
+              <input
+                type="url"
+                class="form-control"
+                id="github"
+                placeholder="Enter your GitHub link"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone no.</label>
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="Enter your Phone no."
+              />
+            </div>
+            <div class="form-group">
+              <label for="college">Your College</label>
+              <input
+                type="text"
+                class="form-control"
+                id="college"
+                placeholder="Enter your college name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="year">Current Year</label>
+              <input
+                type="text"
+                class="form-control"
+                id="year"
+                placeholder="Current year"
+              />
+            </div>
+            <div class="form-group">
+              <label for="dept">Department</label>
+              <input
+                type="text"
+                class="form-control"
+                id="dept"
+                placeholder="Enter your Department"
+              />
+            </div>
+            <h3>Technical Skills</h3>
+            <div class="form-group">
+                <label for="lang" class="mt-2">Programming Languages</label>
+                <input
+                  type="text"
+                  class="form-control lang"
+                  id="lang"
+                  placeholder="Enter here"
+                />
+              </div>
+              <div class="form-group">
+                <label for="tools" class="mt-2">Tools and Utilities</label>
+                <input
+                  type="text"
+                  class="form-control tools"
+                  id="tools"
+                  placeholder="Enter here"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lib" class="mt-2">Libraries</label>
+                <input
+                  type="text"
+                  class="form-control lib"
+                  id="lib"
+                  placeholder="Enter here"
+                />
+              </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <p class="mt-4">Academic Qualification</p>
+            <div class="mb-2" id="qual">
+              <div class="form-group col-md-6">
+                <label for="compYear">Year</label>
+                <input
+                  type="text"
+                  class="form-control compYear"
+                  placeholder="Year"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="degree">Degree/Certificate</label>
+                <input
+                  type="text"
+                  class="form-control degree"
+                  placeholder="Enter here"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="cpi">CPI/%</label>
+                <input
+                  type="text"
+                  class="form-control cpi"
+                  placeholder="CPI/%"
+                />
+              </div>
+              <div class="form-group col-md-10">
+                <label for="insti">Institute</label>
+                <input
+                  type="text"
+                  class="form-control insti"
+                  placeholder="Institute"
+                />
+              </div>
+            </div>
+            <div class="container text-right" id="qualAdd">
+              <button class="btn btn-info btn-sm mb-3">Add More</button>
+            </div>
+            <div class="form-group" id="sAch">
+              <label for="ach" class="mt-2">Scholastic Achievements</label>
+              <input
+                type="text"
+                class="form-control ach"
+                placeholder="Enter here"
+              />
+            </div>
+            <div class="container text-right" id="achAdd">
+              <button class="btn btn-info btn-sm mb-3">Add More</button>
+            </div>
+            <div class="mb-2" id="project">
+              <div class="form-group">
+                <label for="title">Project Title</label>
+                <input
+                  type="text"
+                  class="form-control title"
+                  placeholder="Enter here"
+                />
+              </div>
+              <div class="form-group">
+                <label for="desc">Projects Description</label>
+                <textarea class="form-control desc" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="container text-right" id="projAdd">
+              <button class="btn btn-info btn-sm mb-3">Add More</button>
+            </div>
+           
+          </form>
+        </div>
+      </div>
+      <div class="container text-center mt-2">
+        <button class="btn btn-info btm-lg my-2" id="generate">Generate CV</button>
+      </div>
+    </div>
+
+   <!-- cv template -->
+
+    <div class="container" id="cv-template">
+      <div class="container2">
+        <div class="about my-10">
+          <div class="personal" id="personal">
+            <h1 class="p-color">Rahul Godara</h1>
+            <p>Junior Undergraduate</p>
+            <p>Department of Aerospace Engineering</p>
+            <p>Indian Institute of Technology, Kanpur</p>
+          </div>
+          <div class="contact" id="contact">
+            <p><i class="fas fa-envelope"></i>  mail</p>
+            <p><i class="fas fa-phone"></i>  phone</p>
+            <a href="link" target="_blank"><i class="fab fa-github"></i>   GitHub</a>
+          </div>
+        </div>
+        <hr />
+        <div class="qualf my-10 flex">
+          <div class="w-35 p-color">
+            <h3>Academic Qualifications</h3>
+          </div>
+          <div>
+            <table id="acQual">
+              <tr>
+                <th>Year</th>
+                <th>Degree/Certificate</th>
+                <th>Institute</th>
+                <th>CPI/%</th>
+              </tr>
+              <tr>
+                <td>2019 - Present</td>
+                <td>B.Tech</td>
+                <td>Indian Institute of Technology, Kanpur</td>
+                <td>7.9/10</td>
+              </tr>
+              <tr>
+                <td>2019</td>
+                <td>CBSE(XII)</td>
+                <td>Times Public School, Hanumangarh</td>
+                <td>90.2%</td>
+              </tr>
+              <tr>
+                <td>2017</td>
+                <td>CBSE(X)</td>
+                <td>Sanskar International Academy, Hanumangarh</td>
+                <td>9.8/10</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <hr />
+        <div class="achv my-10 flex">
+          <div class="w-35 p-color">
+            <h3>Scholastic Achievements</h3>
+          </div>
+          <div>
+            <ul id="achieve">
+              <li>
+                Secured All India Rank 7776 in JEE Advanced 2019 among the 1.6
+                Lakh shortlisted candidates.
+              </li>
+              <li>
+                Secured All India Rank 11648 in JEE Mains 2019 among the 1.2
+                million candidates.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="projects my-10 flex">
+          <div class="w-35 p-color">
+            <h3>Projects</h3>
+          </div>
+          <div>
+            <div id="projs">
+              <div>
+                <h4>Summer Analytics Capstone Project by C&A, IIT Guwahati</h4> 
+                <ul>
+                  <li>
+                    Participated in 6-week Bootcamp, learnt and implemented
+                    various models of machine learning.
+                  </li>
+                  <li>
+                    Secured 92th Rank in the final hackathon conducted by C&A
+                    IITG.
+                  </li>
+                  <li>
+                    Implemented various Machine learning models and by using
+                    GridsearchCV obtained best accuracy for Ridge Regressor.
+                  </li>
+                  <li>
+                    Secured 40th Rank among more than 4K participitants in the
+                    overall evaluation conducted by C&A club IITG and recieved
+                    certificate of excellence
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4>Home Price Prediction</h4>
+                <ul>
+                  <li>
+                    Implemented Feature Engineering , One Hot Encoding and removed
+                    outliers using Mean and Standard Deviation on the dataset used
+                    to train the model.
+                  </li>
+                  <li>
+                    Trained model using Linear Regression, lasso Regression and
+                    Decision Tree.
+                  </li>
+                  <li>
+                    Performed parameter tunning using GridsearchCV and finally got
+                    best accuracy for Linear Regression.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4>Blog Website</h4>
+                <ul>
+                  <li>
+                    Designed a blog website using html, css and to add content to
+                    webpages dynamically, used ejs .
+                  </li>
+                  <li>
+                    Used JavaScript and node.js for creating server and
+                    functionality.
+                  </li>
+                  <li>
+                    The website gives the option to create a blog and add to the
+                    home page.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4>Simon Game</h4>
+                <ul>
+                  <li>
+                    Designed a webpage using html and CSS which shows all the
+                    layout of a popular memory game known as Simon Game.
+                  </li>
+                  <li>
+                    Added functionality to webpage using JavaScript which helps in
+                    remembering all the moves of participants.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4>Drum Kit</h4>
+                <ul>
+                  <li>
+                    Designed a webpage using html and CSS which shows different
+                    parts of a drum kit.
+                  </li>
+                  <li>
+                    Added functionality to webpage using JavaScript which allows
+                    every part of drum to produce different sound when clicked on
+                    different image or pressed the respective key on keyboard.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="skills my-10 flex">
+          <div class="w-35 p-color">
+            <h3>Technical Skills</h3>
+          </div>
+          <div id="tech">
+            <div>
+              <h4>Programming Languages</h4>
+              C, C++, HTML5, CSS3, Python, JavaScript
+            </div>
+            <div>
+              <h4>Tools and Utilities</h4>
+              AutoCAD, Autodesk Inventor, VS Code, Jupyter Notebook, SQL, node.js,
+              ejs, mongoDB
+            </div>
+            <div>
+              <h4>Libraries</h4>
+              Pandas, NumPy, SciPy, Matplotlib, Seaborn, tensorflow, keras, STL,
+              Bootstrap, jQuery
+            </div>
+          </div>
+        </div>
+        <hr />
+        
+        
+        
+      </div>
+      <div id="print">
+        <button class="btn btn-info btn-lg my-3">Print CV</button>
+      </div>
+    </div>
+
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://kit.fontawesome.com/ebbcddb620.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
+  </body>
+</html>

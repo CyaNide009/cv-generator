@@ -1,0 +1,21 @@
+
+#cv-form{
+    /* display:none ; */
+}
+
+#qual{
+    background-color: rgb(238, 238, 238);
+    padding: 8px;
+    border-radius: 8px;
+}
+#sAch{
+    background-color: rgb(238, 238, 238);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#project{
+    background-color: rgb(238, 238, 238);
+    padding: 8px;
+    border-radius: 8px;
+}
